@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  
+  <remote name="Cramx"
+           fetch="https://github.com/Cramx25"/>
 
-<!-- Trees-->
-<project path="device/lge/judyln" name="Cramx25/android_device_lge_judyln.git" remote="github" revision="Lineage-17.1" />
-<project path="device/lge/sdm845-common" name="Cramx25/android_device_lge_sdm845-common.git" remote="github" revision="Lineage-17.1" />
-<project path="hardware/lge" name="EmanuelCN/android_device_lge_hardware.git" remote="github" revision="ten" />
-<project path="device/lge/common" name="EmanuelCN/android_device_lge_common.git" remote="github" revision="ten" />
-<project path="vendor/lge" name="EmanuelCN/proprietary_vendor_lge.git" remote="github" revision="ten" />
-<project path="kernel/lge/sdm845" name="EmanuelCN/android_kernel_lge_sdm845.git" remote="github" revision="ten-features" />
+   <remote name="Emanuel"
+           fetch="https://github.com/EmanuelCN"/>
+  
+  <!-- Kernels -->
+   <project path="kernel/lge/sdm845"
+            name="android_kernel_lge_sdm845"
+            remote="Emanuel"
+            revision="ten-features"
+            clone-depth="1"/>
+
+<!-- Device Tree and Common SDM845 Tree -->
+   <project path="device/lge/judyln"
+            name="android_device_lge_judyln"
+            remote="Cramx"
+            revision="Lineage-17.1"/>
+   
+   <project path="device/lge/sdm845-common"
+            name="android_device_lge_sdm845-common"
+            remote="Cramx"
+            revision="Lineage-17.1"/>
+  
+<!-- Vendor Trees and Common Vendor Tree -->
+   <project path="vendor/lge/judyln"
+            name="proprietary_vendor_lge"
+            remote="Cramx"
+            revision="ten"/>
+
+   <project path="vendor/lge/sdm845-common" 
+            name="proprietary_vendor_lge" 
+            remote="Cramx"
+            revision="ten" />
+  
+  <!-- Hardware Trees and Common Device Tree -->
+   <project path="device/lge/common"
+            name="android_device_lge_common"
+            remote="Emanuel"
+            revision="ten"/>
+
+   <project path="hardware/lge" 
+            name="android_device_lge_hardware" 
+            remote="Emanuel"
+            revision="ten" />
 
 </manifest>
