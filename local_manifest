@@ -4,8 +4,12 @@
   <remote name="Cramx"
            fetch="https://github.com/Cramx25"/>
 
-   <remote name="Emanuel"
+  <remote name="Emanuel"
            fetch="https://github.com/EmanuelCN"/>
+  
+  <remote name="clang"   
+           fetch="https://github.com/kdrag0n" />
+ 
   
   <!-- Kernels -->
    <project path="kernel/lge/sdm845"
@@ -46,5 +50,12 @@
             name="android_device_lge_hardware" 
             remote="Emanuel"
             revision="ten" />
+                          
+   <!-- Clang -->
+   <project path="prebuilts/clang/host/linux-x86/clang-proton" 
+            name="proton-clang"
+            remote="clang" 
+            revision="master" 
+            clone-depth="1" />
 
 </manifest>
