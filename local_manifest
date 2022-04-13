@@ -2,10 +2,10 @@
 <manifest>
   
   <remote name="Cramx"
-           fetch="https://github.com/Cramx25"/>
+           fetch="https://github.com/Cramx25" />
 
   <remote name="Emanuel"
-           fetch="https://github.com/EmanuelCN"/>
+           fetch="https://github.com/EmanuelCN" />
   
   <remote name="clang"   
            fetch="https://github.com/kdrag0n" />
@@ -16,30 +16,30 @@
             name="android_kernel_lge_sdm845"
             remote="Emanuel"
             revision="twelve"
-            clone-depth="1"/>
+            clone-depth="1" />
 
 <!-- Device Tree and Common SDM845 Tree -->
    <project path="device/lge/judyln"
             name="android_device_lge_judyln"
             remote="Cramx"
-            revision="twelve"/>
+            revision="twelve" />
    
    <project path="device/lge/sdm845-common"
             name="android_device_lge_sdm845-common"
             remote="Cramx"
-            revision="twelve"/>
+            revision="twelve" />
   
 <!-- Vendor Trees and Common Vendor Tree -->
    <project path="vendor/lge/judyln"
             name="proprietary_vendor_lge"
             remote="Emanuel"
-            revision="S"/>
+            revision="S" />
   
   <!-- Hardware Trees and Common Device Tree -->
    <project path="device/lge/common"
             name="android_device_lge_common"
             remote="Emanuel"
-            revision="R"/>
+            revision="R" />
 
    <project path="hardware/lge" 
             name="android_device_lge_hardware" 
